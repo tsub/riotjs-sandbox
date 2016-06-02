@@ -1,5 +1,5 @@
 {
-  "name": "riotjs-tutorial",
+  "name": "riotjs-sandbox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
     "node-sass": "^3.7.0",
     "riot": "^2.4.1",
     "sass-loader": "^3.2.0",
