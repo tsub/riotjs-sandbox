@@ -28,7 +28,7 @@ module.exports = {
     ],
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.js$|\.tag$/,
         loader: 'babel',
         query: {
           presets: ['es2015']

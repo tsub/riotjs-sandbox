@@ -1,5 +1,3 @@
-'use strict';
-
-import './tags.js';
+import './component.js';
 
 riot.mount('todo-app');
