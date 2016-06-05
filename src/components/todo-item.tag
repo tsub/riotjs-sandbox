@@ -1,6 +1,6 @@
 <todo-item>
-  <span class={done: opts.done} onclick={toggle}>
-    {opts.title}
+  <span class={done: done} onclick={toggle}>
+    {title}
   </span>
   <style type="scss" scoped>
     :scope {
@@ -12,8 +12,11 @@
     }
   </style>
   <script>
+    this.title = this.opts.title;
+    this.done = this.opts.done;
+
     this.toggle = () => {
-      this.opts.done = !opts.done;
+      this.done = !this.done;
     };
   </script>
 </todo-item>
