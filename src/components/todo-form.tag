@@ -5,9 +5,13 @@
   </form>
   <button onclick="{clear}">Clear Completed</button>
   <script>
-    this.add = () => {
+    this.add = (e) => {
       if (this.input.value) {
-        this.opts.todos.push({ title: this.input.value });
+        opts.store.dispatch({
+          type: 'ADD_TODO',
+          text: this.input.value,
+          id: this.nextTodoId++
+        });
         this.input.value = '';
       }
     };

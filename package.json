@@ -15,7 +15,6 @@
     "css-loader": "^0.23.1",
     "html-webpack-plugin": "^2.19.0",
     "node-sass": "^3.7.0",
-    "riot": "^2.4.1",
     "riotjs-loader": "^3.0.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
@@ -23,5 +22,10 @@
     "webpack-dev-server": "^1.14.1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "riot": "^2.4.1"
+  }
 }
