@@ -1,8 +1,9 @@
 <todo-app>
   <h3>Todos</h3>
-  <todo-list store={opts.store}></todo-list>
-  <todo-form store={opts.store}></todo-form>
+  <todo-form store={store}></todo-form>
+  <todo-list store={store}></todo-list>
   <script>
-    opts.store.subscribe(this.update)
+    this.store = opts.store;
+    this.store.subscribe(this.update);
   </script>
 </todo-app>

@@ -3,21 +3,17 @@
     <input name="input" type="text" placeholder="New Todo" autofocus="true">
     <input type="submit" value="Add Todo">
   </form>
-  <button onclick="{clear}">Clear Completed</button>
   <script>
-    this.add = (e) => {
+    this.store = opts.store;
+
+    this.add = () => {
       if (this.input.value) {
-        opts.store.dispatch({
+        this.store.dispatch({
           type: 'ADD_TODO',
-          text: this.input.value,
-          id: this.nextTodoId++
+          title: this.input.value
         });
         this.input.value = '';
       }
-    };
-
-    this.clear = () => {
-      this.input.value = '';
     };
   </script>
 </todo-form>
