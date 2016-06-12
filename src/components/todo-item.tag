@@ -12,11 +12,18 @@
     }
   </style>
   <script>
-    this.title = this.opts.title;
-    this.done = this.opts.done;
+    this.on('mount', () => {
+      this.id = opts.id;
+      this.title = opts.title;
+      this.done = opts.done;
+      this.store = opts.store;
+    });
 
     this.toggle = () => {
-      this.done = !this.done;
+      this.store.dispatch({
+        type: 'TOGGLE_DONE',
+        id: this.id
+      });
     };
   </script>
 </todo-item>
